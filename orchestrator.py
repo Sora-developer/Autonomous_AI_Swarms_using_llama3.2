@@ -51,6 +51,9 @@ class SwarmOrchestrator:
             current_plan = self.planner.execute(f"Refine your plan based on these identified flaws: {json.dumps(criticism)}.")
             self.global_history.append({"agent": "Planner", "turn" : i+1, "content": current_plan})
             # print(f"Refined Plan {i+1}: {current_plan.get('feature_name', 'N/A')} with components {current_plan.get('core_components', [])}")
+
+            self.planner.prune_context()
+            self.critic.prune_context()
         
         # 3. Final Summarization
         print("\n[Summarizer] Compiling the final technical specification...")

@@ -40,3 +40,12 @@ class BaseAgent(BaseModel):
         except Exception as e:
             print(f"Error executing agent '{self.name}': {str(e)}")
             return None
+    
+    def prune_context(self, max_history: int = 5):
+        """
+        Truncates the chat history to the system prompt + the last N messages
+        to prevent context window overflow.
+        """
+        if len(self.chat_history) > max_history + 1:
+            # Keep the system prompt (index 0) and the last `max_history` messages
+            self.chat_history = [self.chat_history[0]] + self.chat_history[-max_history:]
