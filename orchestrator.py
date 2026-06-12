@@ -44,11 +44,13 @@ class SwarmOrchestrator:
             print("[Critic] Analyzing the Planner's proposal...")
             criticism = self.critic.execute(f'Review thsi plan and identify strict flaws: {json.dumps(current_plan)}')
             self.global_history.append({"agent": "Critic", "turn" : i+1, "content": criticism})
+            # print(f"Identified Flaws {i+1}: {criticism.get('identified_flaws', [])}")
 
             # Planner refines the plan based on criticism
             print("[Planner] Refining the plan based on Critic's feedback...")
             current_plan = self.planner.execute(f"Refine your plan based on these identified flaws: {json.dumps(criticism)}.")
             self.global_history.append({"agent": "Planner", "turn" : i+1, "content": current_plan})
+            # print(f"Refined Plan {i+1}: {current_plan.get('feature_name', 'N/A')} with components {current_plan.get('core_components', [])}")
         
         # 3. Final Summarization
         print("\n[Summarizer] Compiling the final technical specification...")
