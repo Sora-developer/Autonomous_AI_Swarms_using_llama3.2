@@ -5,7 +5,7 @@ from prompts import PLANNER_PROMPT, CRITIC_PROMPT, SUMMARIZER_PROMPT
 
 class SwarmOrchestrator:
     def __init__(self, model_name : str = "llama3.2:1b"):
-        # Initialize the three different peronas
+        # Initialize the three different personas
         self.planner = BaseAgent(
             name="Planner",
             model=model_name,
