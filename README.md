@@ -26,7 +26,7 @@ This swarm consists of three distinct personas:
 - **Simulated OS Console Stream:** A real-time Console based Text User Interface (TUI) powered by the Python `rich` library streams agent outputs live into custom-colored containers.
 - **Persistence Layer:** Automatically saves the Summarizer's final compiled technical specification as an exported `.md` file inside an organized `/workspace` directory.
 
-## 🛠️ Installation & Setup
+##  Installation & Setup
 Before running the application, ensure all heavy background applications (web browsers, games, heavy IDE indexing) are closed to dedicate your GPU entirely to the multi-turn exchange.
 
 **1. Install Ollama**
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 (Dependencies: `ollama>=0.2.0`, `pydantic>=2.0.0`, `rich>=13.0.0`) 
 
-## 💻 Usage
+##  Usage
 To initialize the multi-agent swarm, run the main orchestrator script:
 
 ```bash
