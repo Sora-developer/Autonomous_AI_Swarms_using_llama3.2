@@ -11,7 +11,7 @@ By optimizing a single 1B-parameter quantized model (e.g. Llama 3.2 1B) via Olla
 
 ## 🎥 Demo
 
-![Project DEMO](demo.mp4)
+![Project DEMO](demo.gif)
 
 ## The Architecture
 A single 1B model has a tiny footprint, so instead of running one heavyweight model per role, this project runs **several specialized personas of the same model concurrently** — that's where the "swarm" actually comes from, rather than from mixing different models.
