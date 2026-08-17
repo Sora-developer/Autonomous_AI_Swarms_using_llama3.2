@@ -9,9 +9,9 @@ Developed a local multi-agent system engineered to execute entirely within a str
 
 By optimizing a single 1B-parameter quantized model (e.g. Llama 3.2 1B) via Ollama, this project bypasses bloated, memory-heavy frameworks like LangChain or CrewAI. Instead, it utilizes a custom, lightweight async state machine orchestrator and structured JSON outputs to force deterministic behavior from a small model in a simulated OS console stream.
 
-<!-- ## 🎥 Demo
+## 🎥 Demo
 
-> **Note:** (Upload an MP4 or GIF here showing the rich console UI and the agent swarm firing off concurrently.) -->
+![Project DEMO](demo.mp4)
 
 ## The Architecture
 A single 1B model has a tiny footprint, so instead of running one heavyweight model per role, this project runs **several specialized personas of the same model concurrently** — that's where the "swarm" actually comes from, rather than from mixing different models.
