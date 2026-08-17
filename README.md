@@ -1,9 +1,9 @@
 #  Autonomous AI Agent Swarms (Simulated OS Environment)
 
-# PS
+## PS
 Developers lack a lightweight, privacy-preserving, and completely offline environment to execute real-time multi-agent consensus workflows without hitting hardware VRAM constraints or depending on paid cloud APIs.
 
-# Solution
+## Solution
 
 Developed a Local multi-agent system engineered to execute entirely within a strict 4GB VRAM ceiling.
 
