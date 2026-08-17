@@ -1,6 +1,11 @@
-#  Autonomous AI Agent Swarms (Simulated OS Environment)   
+#  Autonomous AI Agent Swarms (Simulated OS Environment)
 
-Local multi-agent system engineered to execute entirely within a strict 4GB VRAM ceiling.
+# PS
+Developers lack a lightweight, privacy-preserving, and completely offline environment to execute real-time multi-agent consensus workflows without hitting hardware VRAM constraints or depending on paid cloud APIs.
+
+# Solution
+
+Developed a Local multi-agent system engineered to execute entirely within a strict 4GB VRAM ceiling.
 
 By optimizing 1B parameter quantized models (like Llama 3.2 1B or Qwen 2.5 1.5B) via Ollama, this project bypasses bloated, memory-heavy frameworks like LangChain or CrewAI. Instead, it utilizes a custom, lightweight state machine orchestrator and structured JSON outputs to force deterministic behavior from small models in a simulated OS console stream.
 
