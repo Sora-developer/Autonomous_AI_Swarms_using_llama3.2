@@ -105,6 +105,7 @@ UX ──────────────────────┘
 - **Persistence Layer:** Automatically saves the Summarizer's final compiled technical specification as an exported `.md` file inside an organized `/workspace` directory.
 
 ## Project Sturcture
+```
 ./
 ├── main.py
 ├── schemas.py
@@ -117,6 +118,7 @@ UX ──────────────────────┘
     └─ base_agent.py
 └── workspace/
     └── generated specification files
+```
 
 ## Installation & Setup
 Before running the application, ensure all heavy background applications (web browsers, games, heavy IDE indexing) are closed to dedicate your GPU entirely to the multi-turn exchange.
