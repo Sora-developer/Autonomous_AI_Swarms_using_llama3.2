@@ -1,6 +1,6 @@
 # Autonomous AI Agent Swarms for Local LLM Orchestration
 
-> A lightweight, fully local multi-agent orchestration system that runs specialized AI agents concurrently using a single 1B-parameter LLM.
+ A lightweight, fully local multi-agent orchestration system that runs specialized AI agents concurrently using a single 1B-parameter LLM.
 
 ## Problem Statement
 Developers lack a lightweight, privacy-preserving, and completely offline environment to execute real-time multi-agent consensus workflows without hitting hardware VRAM constraints or depending on paid cloud APIs.
