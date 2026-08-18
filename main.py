@@ -52,7 +52,8 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="Run a visual swarm for a given idea.")
     parser.add_argument("--idea", type=str, help="The idea to generate a specification for (e.g., 'A web app for tracking personal finances').", required=True)
-    # parser.add_argument("--model", type=str, default="llama3.2:1b", help="The model to use for the swarm (default: 'llama3.2:1b').")
+    # UNCOMENT the following if your want to use a different model than the default
+    # parser.add_argument("--model", type=str, default="llama3.2:1b", help="The model to use for the swarm (default: 'llama3.2:1b').")      
     parser.add_argument("--max-loops", type=int, default=2, help="The maximum number of loops for the swarm (default: 2).")
 
     args = parser.parse_args()
